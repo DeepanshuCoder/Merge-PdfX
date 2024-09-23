@@ -1,11 +1,14 @@
 {
+  "homepage": "https://DeepanshuCoder.github.io/Merge-PdfX",
   "name": "project",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +17,8 @@
     "express": "^4.19.2",
     "multer": "^1.4.5-lts.1",
     "pdf-merger-js": "^3.3.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
